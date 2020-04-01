@@ -4,24 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/coin9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/divider10"
-        app:srcCompat="@drawable/red" />
 
     <ImageView
         android:id="@+id/coin8"
@@ -31,14 +15,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="8"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toBottomOf="@+id/divider10"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
         android:id="@+id/coin7"
@@ -48,14 +34,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="7"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/divider1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider10"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toEndOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
         android:id="@+id/coin6"
@@ -65,14 +53,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider10"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:tag="6"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/divider9"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
         android:id="@+id/coin5"
@@ -82,14 +72,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="5"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider10"
-        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toBottomOf="@+id/divider9"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
         android:id="@+id/coin4"
@@ -99,14 +91,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="4"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider10"
-        app:layout_constraintEnd_toStartOf="@+id/divider1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider9"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toEndOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
         android:id="@+id/coin3"
@@ -116,14 +110,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider9"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:tag="3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/divider10"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
         android:id="@+id/coin2"
@@ -133,14 +129,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="2"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider9"
-        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <ImageView
         android:id="@+id/coin1"
@@ -150,14 +148,35 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintDimensionRatio="1:1"
+        android:onClick="showCoin"
         android:padding="10dp"
+        android:tag="1"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider1"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/coin0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="showCoin"
+        android:padding="10dp"
+        android:tag="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/divider9"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/red" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <View
         android:id="@+id/divider2"
