@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     var redScore = 0
     var tieCounter = 9
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,15 +32,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showCoin (view: View){
+        //it has to be ImageView so I can setImageResource in this fun and
+        //I can setImageDrawable(null) in playAgain()
         val clickedField = view as ImageView
+        tieCounter -=1
+
         try {
             val clickedTag = view.getTag().toString().toInt()
-            tieCounter -=1
 
             if (gameState[clickedTag] == 0 && gameActive) {
                 clickedField.translationY = -1500f
                 if (activePlayer == 1){
-                    clickedField.setImageResource(R.drawable.yellow)
+                    clickedField.setImageResource(R.drawable.yellow)                                //
                     gameState[clickedTag] = 1
                     activePlayer = 2
                 } else {
@@ -89,16 +91,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun playAgain(view: View){
-        coin0ImageView.setImageDrawable(null)
-        coin1ImageView.setImageDrawable(null)
-        coin2ImageView.setImageDrawable(null)
-        coin3ImageView.setImageDrawable(null)
-        coin4ImageView.setImageDrawable(null)
-        coin5ImageView.setImageDrawable(null)
-        coin6ImageView.setImageDrawable(null)
-        coin7ImageView.setImageDrawable(null)
-        coin8ImageView.setImageDrawable(null)
+        //reset game status
+        val arrayOfCoinImageViews = arrayOf(coin0ImageView, coin1ImageView,
+            coin2ImageView, coin3ImageView, coin4ImageView, coin5ImageView,coin6ImageView,
+            coin7ImageView, coin8ImageView)
 
+        for (coinView in arrayOfCoinImageViews) {
+            coinView.setImageDrawable(null)
+        }
         winnerTextView.isVisible = false
         playAgainBtn.isVisible = false
         gameActive = true
@@ -112,7 +112,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Red's turn.", Toast.LENGTH_SHORT).show()
         }
-
     }
 
     fun resetScore (view: View) {
