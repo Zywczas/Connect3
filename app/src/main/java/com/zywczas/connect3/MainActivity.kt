@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     //0-empty, 1-yellow player, 2-red player
 
     var activePlayer = 1
-    var activePlayerString = "Yellow"
     var gameState = arrayListOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
     val winningPositions = arrayOf(arrayOf(0,1,2), arrayOf(3,4,5), arrayOf(6,7,8),
                     arrayOf(0,3,6), arrayOf(1,4,7), arrayOf(2,5,8), arrayOf(0,4,8), arrayOf(2,4,6))
@@ -50,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                     gameState[clickedTag] = 2
                     activePlayer = 1
                 }
-                clickedField.animate().translationYBy(1500f).rotation(1800f).duration = 500
+                clickedField.animate().translationYBy(1500f).rotation(3600f).duration = 500
                 checkIfWon()
 
                 //if tie
@@ -90,7 +89,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun playAgain(view: View){
-
         coin0ImageView.setImageDrawable(null)
         coin1ImageView.setImageDrawable(null)
         coin2ImageView.setImageDrawable(null)
@@ -109,6 +107,12 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..8){
             gameState[i] = 0
         }
+        if (activePlayer == 1) {
+            Toast.makeText(this, "Yellow's turn.", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "Red's turn.", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     fun resetScore (view: View) {
