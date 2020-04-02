@@ -12,15 +12,17 @@ import androidx.core.view.isVisible as isVisible
 
 class MainActivity : AppCompatActivity() {
 
-    //0-empty, 1-yellow, 2-red
+    //0-empty, 1-yellow player, 2-red player
 
     var activePlayer = 1
+    var activePlayerString = "Yellow"
     var gameState = arrayListOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
     val winningPositions = arrayOf(arrayOf(0,1,2), arrayOf(3,4,5), arrayOf(6,7,8),
                     arrayOf(0,3,6), arrayOf(1,4,7), arrayOf(2,5,8), arrayOf(0,4,8), arrayOf(2,4,6))
     var gameActive = true
     var yellowScore = 0
     var redScore = 0
+    var tieCounter = 9
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val clickedField = view as ImageView
         try {
             val clickedTag = view.getTag().toString().toInt()
+            tieCounter -=1
 
             if (gameState[clickedTag] == 0 && gameActive) {
                 clickedField.translationY = -1500f
@@ -49,6 +52,14 @@ class MainActivity : AppCompatActivity() {
                 }
                 clickedField.animate().translationYBy(1500f).rotation(1800f).duration = 500
                 checkIfWon()
+
+                //if tie
+                if (tieCounter == 0 && gameActive) {
+                    gameActive = false
+                    winnerTextView.text = "Tie!"
+                    winnerTextView.isVisible = true
+                    playAgainBtn.isVisible = true
+                }
             }
         } catch (e: NumberFormatException) {
             Toast.makeText(this,"Incorrect tag, please close the app", Toast.LENGTH_LONG).show()
@@ -93,6 +104,7 @@ class MainActivity : AppCompatActivity() {
         winnerTextView.isVisible = false
         playAgainBtn.isVisible = false
         gameActive = true
+        tieCounter = 9
 
         for (i in 0..8){
             gameState[i] = 0
@@ -105,6 +117,5 @@ class MainActivity : AppCompatActivity() {
         redScore = 0
         redScoreTextView.text = "Red: $redScore"
     }
-
 
 }
