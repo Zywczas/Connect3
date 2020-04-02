@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/coin8"
+        android:id="@+id/coin8ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         android:padding="10dp"
         android:tag="8"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
-        android:id="@+id/coin7"
+        android:id="@+id/coin7ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -38,7 +38,7 @@
         android:padding="10dp"
         android:tag="7"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
-        android:id="@+id/coin6"
+        android:id="@+id/coin6ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -57,7 +57,7 @@
         android:padding="10dp"
         android:tag="6"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider10" />
 
     <ImageView
-        android:id="@+id/coin5"
+        android:id="@+id/coin5ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
-        android:id="@+id/coin4"
+        android:id="@+id/coin4ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
-        android:id="@+id/coin3"
+        android:id="@+id/coin3ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -122,7 +122,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider9" />
 
     <ImageView
-        android:id="@+id/coin2"
+        android:id="@+id/coin2ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <ImageView
-        android:id="@+id/coin1"
+        android:id="@+id/coin1ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -160,7 +160,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <ImageView
-        android:id="@+id/coin0"
+        android:id="@+id/coin0ImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -183,7 +183,7 @@
         android:layout_width="7dp"
         android:layout_height="0dp"
         android:background="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider1"
@@ -202,19 +202,18 @@
         android:layout_width="7dp"
         android:layout_height="0dp"
         android:background="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <View
         android:id="@+id/divider9"
@@ -232,11 +231,102 @@
         android:layout_width="0dp"
         android:layout_height="7dp"
         android:background="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Yellow has won!" />
+
+    <Button
+        android:id="@+id/playAgainBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="playAgain"
+        android:text="Play again"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/coin1ImageView"
+        app:layout_constraintEnd_toEndOf="@+id/winnerTextView"
+        app:layout_constraintStart_toStartOf="@+id/winnerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/winnerTextView" />
+
+    <TextView
+        android:id="@+id/yellowScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Yellow: 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/redScoreTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/redScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Red: 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yellowScoreTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yellowScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/yellowScoreTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/resetScoreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="?android:attr/colorBackground"
+        android:onClick="resetScore"
+        android:text="Reset score"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
