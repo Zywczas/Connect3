@@ -24,7 +24,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin7ImageView"
@@ -43,7 +44,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin6ImageView"
@@ -62,7 +64,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin5ImageView"
@@ -81,7 +84,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+        app:layout_constraintTop_toBottomOf="@+id/divider9"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin4ImageView"
@@ -100,7 +104,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+        app:layout_constraintTop_toBottomOf="@+id/divider9"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin3ImageView"
@@ -119,7 +124,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+        app:layout_constraintTop_toBottomOf="@+id/divider9"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin2ImageView"
@@ -138,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider2"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin1ImageView"
@@ -157,7 +164,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider1"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:contentDescription="@string/board_field" />
 
     <ImageView
         android:id="@+id/coin0ImageView"
@@ -176,7 +184,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:contentDescription="@string/board_field" />
 
     <View
         android:id="@+id/divider2"
@@ -265,7 +274,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_dark"
         android:onClick="playAgain"
-        android:text="Play again"
+        android:text="@string/play_again"
         android:textColor="@android:color/white"
         android:textSize="14sp"
         android:visibility="invisible"
@@ -281,7 +290,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:background="@android:color/holo_orange_light"
-        android:text="Yellow: 0"
+        android:text="@string/yellow_0"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -298,7 +307,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@android:color/holo_red_dark"
-        android:text="Red: 0"
+        android:text="@string/red_0"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/yellowScoreTextView"
@@ -317,7 +326,7 @@
         android:layout_marginRight="8dp"
         android:background="?android:attr/colorBackground"
         android:onClick="resetScore"
-        android:text="Reset score"
+        android:text="@string/reset_score"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

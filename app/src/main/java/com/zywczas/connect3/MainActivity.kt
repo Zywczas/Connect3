@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showCoin (view: View){
-        //it has to be ImageView so I can setImageResource in this fun and
+        //it has to be ImageView so I can setImageResource in this fun and then
         //I can setImageDrawable(null) in playAgain()
         val clickedField = view as ImageView
         tieCounter -=1
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     fun checkIfWon(){
         for (winningPosition in winningPositions) {
             if (gameState[winningPosition[0]] != 0 && gameState[winningPosition[0]] == gameState[winningPosition[1]] &&
-                gameState[winningPosition[1]] == gameState[winningPosition[2]]) {
+                gameState[winningPosition[1]] == gameState[winningPosition[2]] && gameActive) {
 
                 gameActive = false
                 winnerTextView.isVisible = true

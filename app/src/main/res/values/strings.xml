@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Connect3</string>
+    <string name="board_field">board field</string>
+    <string name="play_again">Play again</string>
+    <string name="yellow_0">Yellow: 0</string>
+    <string name="red_0">Red: 0</string>
+    <string name="reset_score">Reset score</string>
 </resources>
