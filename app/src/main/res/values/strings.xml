@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Connect3</string>
+    <string name="app_name">Kółko i Krzyżyk</string>
     <string name="board_field">board field</string>
     <string name="play_again">Play again</string>
     <string name="yellow_0">Yellow: 0</string>
